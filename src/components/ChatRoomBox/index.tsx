@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import ChatBoxBubble from './ChatBoxBubble';
@@ -5,71 +6,71 @@ import classes from './index.module.scss';
 
 const mockData = [
   {
-    comment: 'Selamat ya manssss 😊',
+    comment: 'Test comment panjang bat panjang akowdkoakwdokawodkoawko',
     name: 'Rahman'
   },
   {
-    comment: 'Selamat ya nov 😊',
+    comment: 'Test comment 2 😊',
     name: 'Rahmanskuy'
   },
   {
-    comment: 'Semoga samawa guys',
+    comment: 'Test comment 3',
     name: 'Yang terpatahkan'
   },
   {
-    comment: 'Selamattt rahmannnn',
+    comment: 'Test comment 4',
     name: 'Mantan terindahmu'
   },
   {
-    comment: 'Selamat ya tyaaa',
+    comment: 'Test comment 5',
     name: 'Abang tersayang'
   },
   {
-    comment: 'Selamat ya manssss 😊',
+    comment: 'Test comment 6',
     name: 'Rahman'
   },
   {
-    comment: 'Selamat ya nov 😊',
+    comment: 'Test comment 7',
     name: 'Rahmanskuy'
   },
   {
-    comment: 'Semoga samawa guys',
+    comment: 'Test comment 8',
     name: 'Yang terpatahkan'
   },
   {
-    comment: 'Selamattt rahmannnn',
+    comment: 'Test comment 9',
     name: 'Mantan terindahmu'
   },
   {
-    comment: 'Selamat ya tyaaa',
+    comment: 'Test comment 10',
     name: 'Abang tersayang'
   },
-  
 ]
 
 const ChatRoomBox = () => {
-  console.log('checkk', classes)
   return (
-    <div className={classes['chat-room-wrap']}>
-      <div
-        id="scrollableDiv"
-        className={classes.list}
-      >
-        {/*Put the scroll bar always on the bottom*/}
-        <InfiniteScroll
-          dataLength={mockData.length}
-          next={() => {
-            console.log('tapi boong')
-          }}
-          inverse={true} //
-          hasMore={true}
-          loader={<h4>Loading...</h4>}
-          scrollableTarget="scrollableDiv"
+    <div className={classNames(classes.container, 'flex justify-center')}>
+      <div className={classNames(classes['chat-room-wrap'])}>
+        <div
+          id="scrollableDiv"
+          className={classNames(classes.list)}
         >
-          {[...mockData].map((props, index) => (
-            <ChatBoxBubble className={classes.chips} index={index} {...props} />
-          ))}
-        </InfiniteScroll>
+          {/*Put the scroll bar always on the bottom*/}
+          <InfiniteScroll
+            dataLength={mockData.length}
+            next={() => {
+              console.log('tapi boong')
+            }}
+            inverse={true} //
+            hasMore={true}
+            loader={null}
+            scrollableTarget="scrollableDiv"
+          >
+            {[...mockData].map((props, index) => (
+              <ChatBoxBubble className={classes.chips} index={index} {...props} />
+            ))}
+          </InfiniteScroll>
+        </div>
       </div>
     </div>
   )

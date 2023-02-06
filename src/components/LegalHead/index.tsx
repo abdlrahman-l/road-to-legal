@@ -100,6 +100,7 @@ const LegalHead = () => {
         <NextSeo
             title={seo.title}
             description={seo.description}
+			canonical={'https://www.novitarahman.site/'}
             openGraph={{
               type: 'website',
               url: 'https://www.novitarahman.site/',

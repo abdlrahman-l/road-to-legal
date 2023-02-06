@@ -50,23 +50,15 @@ const ChatBoxBubble = ({ comment, name, index }: any) => {
             // [classes['bubble-right']]: item.username_real !== friendId,
         })}
     >
-        <div className={classes.wrap}>
+        <div className={classNames(classes.wrap,'text-sm md:text-md')}>
+			<span className='text-yellow-900 font-semibold'>{name}</span>
             <div
                 className={classes['row-bubble-text']}
                 dangerouslySetInnerHTML={{
                     __html: mutateTextMessage(comment),
                 }}
             />
-            <div className={classes.info}>
-                {/* <Text className="fs-10 fs-md-12 text-neutral-9">{item.time}</Text>
-                {item.username_real !== friendId && (
-                    <Avatar size={16} className="ml-2" src={<IconStatus item={item} />} />
-                )} */}
-            </div>
         </div>
-        {/* {item.status === 'failed' && (
-            <p className={classes['failed-message']}> Sentuh pesan untuk kirim ulang</p>
-        )} */}
         <span className={classes['sender-sign']} />
     </div>
   )

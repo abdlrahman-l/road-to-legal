@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import '@manskuy/grid/build/index.css';
 // import { useObject } from 'react-firebase-hooks/database';
 // import { closeFirebaseConnection, firebaseApp, getFirebaseDatabaseRef } from '../../firebase/utils'
 import './../styles/index.scss';
