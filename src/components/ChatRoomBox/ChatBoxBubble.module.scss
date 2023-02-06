@@ -1,0 +1,71 @@
+.bubble {
+	display: table;
+	position: relative;
+
+	&-left {
+		.wrap {
+			background: white;
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.13);
+			border-radius: 8px;
+			width: fit-content;
+			max-width: 60%;
+			margin: 8px 0 8px 20px;
+			padding: 10px 20px 7px 20px;
+			position: relative;
+			white-space: pre-wrap;
+			z-index: 1;
+
+			@media only screen and (max-width: (368px)) {
+				padding: 8px 12px 5px 12px;
+				max-width: 80%;
+				margin: 8px 0;
+			}
+		}
+	}
+
+	&-right {
+		.wrap {
+			background: #D7F8DE;
+			border-radius: 8px;
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.13);
+			width: fit-content;
+			max-width: 60%;
+			margin: 8px 20px 8px auto;
+			padding: 10px 20px 7px 20px;
+			position: relative;
+			white-space: pre-wrap;
+			z-index: 1;
+
+			@media only screen and (max-width: (368px)) {
+				padding: 8px 12px 5px 12px;
+				max-width: 80%;
+				margin: 8px 0 8px auto;
+			}
+		}
+	}
+
+	.info {
+		margin: -4px 0;
+		text-align: right;
+		display: block;
+
+		.icon {
+			filter: white;
+		}
+	}
+}
+
+.row-bubble-text {
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 100%;
+	word-break: break-word;
+
+	@media only screen and (max-width: 367px) {
+		font-size: 14px;
+	}
+
+	& > a:hover {
+		text-decoration: underline;
+	}
+}
