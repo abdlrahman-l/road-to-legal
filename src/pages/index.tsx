@@ -5,6 +5,7 @@ import LegalHead from '../components/LegalHead'
 import Location from '../components/Location'
 import Layout from '../components/Layout'
 import Chat from 'src/components/Chat'
+import InvitationConfirmation from 'src/components/InvitationConfirmation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,6 +14,7 @@ export default function Home() {
     <Layout>
       <LegalHead />
       <Chat />
+      <InvitationConfirmation />
       <Location />
     </Layout>
   )
