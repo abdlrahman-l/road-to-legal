@@ -67,7 +67,7 @@ const ChatRoomBox = () => {
             scrollableTarget="scrollableDiv"
           >
             {[...mockData].map((props, index) => (
-              <ChatBoxBubble className={classes.chips} index={index} {...props} />
+              <ChatBoxBubble key={index} className={classes.chips} index={index} {...props} />
             ))}
           </InfiniteScroll>
         </div>

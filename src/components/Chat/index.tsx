@@ -6,7 +6,7 @@ import classes from './index.module.scss';
 
 const Chat = () => {
   return (
-    <div className={classNames('shadow-md rounded-lg m-2 overflow-hidden', classes['chat-container'])}>
+    <div className={classNames('shadow-md rounded-lg m-2 overflow-hidden scroll-smooth', classes['chat-container'])} id='Ucapan'>
         <ChatRoomBox />
         <ChatInput />
     </div>

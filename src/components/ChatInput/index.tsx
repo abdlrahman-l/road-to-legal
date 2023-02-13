@@ -26,7 +26,7 @@ const ChatInput = ({ onClickSend }: ChatInputProps) => {
             <CustomInput placeholder='Nama' ref={nameRef} />
             <CustomInput placeholder='Ucapan' ref={commentRef} />
         </div>
-        <button className='flex justify-center items-center' role='button' onClick={onClick}>
+        <button className='flex justify-center items-center focus:bg-transparent' role='button' onClick={onClick}>
             <span className='rounded-full p-1 bg-orange-100'>
             <Image 
                 src={'/icons/chat-send.svg'} alt='send chat' width={40} height={40}/>
