@@ -6,7 +6,7 @@ const CustomInput = forwardRef((props: InputHTMLAttributes<any>, ref) => {
       <input
           className={
               classNames(
-                  "mt-1 text-sm text-gray-500 bg-stone-50 block w-full rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm h-10 p-3 placeholder:text-gray-300",
+                  "text-sm text-gray-500 bg-stone-50 block w-full rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm h-10 p-3 placeholder:text-gray-300",
                   props?.className
               )
           }

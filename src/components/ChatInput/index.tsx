@@ -22,7 +22,7 @@ const ChatInput = ({ onClickSend }: ChatInputProps) => {
 
   return (
     <div className='grid grid-cols-6 gap-2 p-3'>
-        <div className='col-span-5 grid grid-rows-2 gap-2'>
+        <div className='col-span-5 grid grid-rows-2 gap-3'>
             <CustomInput placeholder='Nama' ref={nameRef} />
             <CustomInput placeholder='Ucapan' ref={commentRef} />
         </div>
