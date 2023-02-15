@@ -27,7 +27,7 @@ const InvitationConfirmation = () => {
             <CustomInput type='number' name='jumlah' placeholder='Jumlah yang akan hadir' ref={formRef.current.jumlah}/>
             <textarea ref={formRef.current.ucapan} name='ucapan' placeholder='Ucapan' maxLength={255} className='text-sm text-gray-500 bg-stone-50 block w-full rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm h-20 p-3 placeholder:text-gray-300' />
             <Dropdown data={confirmationOptions} selected={selected} setSelected={setSelected} />
-            <input onClick={onSubmit} className='bg-orange-50 h-10 rounded-md text-sm text-amber-700 font-semibold' type='submit' />
+            <input onClick={onSubmit} className='cursor-pointer bg-orange-50 h-10 rounded-md text-sm text-amber-700 font-semibold' type='submit' />
         </div>
     </div>
   )
