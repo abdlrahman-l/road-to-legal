@@ -6,6 +6,7 @@ import Location from '../components/Location'
 import Layout from '../components/Layout'
 import Chat from 'src/components/Chat'
 import InvitationConfirmation from 'src/components/InvitationConfirmation'
+import FloatingMusicPlayer from 'src/components/FloatingMusicPlayer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Chat />
       <InvitationConfirmation />
       <Location />
+      {/* <FloatingMusicPlayer /> */}
     </Layout>
   )
 }

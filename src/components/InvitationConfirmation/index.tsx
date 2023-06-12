@@ -1,6 +1,8 @@
 import React, { createRef, useRef, useState } from 'react'
 import CustomInput from '../CustomInput'
 import Dropdown from '../Dropdown'
+import classes from './index.module.scss'
+import classNames from 'classnames'
 
 const confirmationOptions = [
     { name: 'Saya akan hadir' },
@@ -21,7 +23,7 @@ const InvitationConfirmation = () => {
   }
 
   return (
-    <div className='card m-2 max-w-lg'>
+    <div className={classNames('card m-2 max-w-lg', classes['confirmation-form'])}>
         <div className='grid gap-3'>
             <CustomInput name='nama' placeholder='Nama' ref={formRef.current.nama} />
             <CustomInput type='number' name='jumlah' placeholder='Jumlah yang akan hadir' ref={formRef.current.jumlah}/>
